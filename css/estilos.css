@@ -1,0 +1,83 @@
+body {
+    width: 100%;
+    background-color: #E5E5E5;
+    font-family: 'Bitter', serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #14213D;
+    color: #FCA311;
+    padding: 5%;
+    width: 100%;
+    position: relative; /* Agregamos posición relativa al encabezado */
+    z-index: 1; /* Ajusta el z-index según tus necesidades */
+}
+
+#titulo {
+    padding-left: 5%;
+    width: 60%;
+    font-size: 25px;
+}
+#opciones{
+    display: flex;
+    justify-items: center;
+}
+.icono{
+    width: 40px;
+    padding: 8%;
+}
+.portada{
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    margin-left: 10vw;
+}
+#video{
+    width: 100%;
+    z-index: 0; 
+}
+article{
+    padding: 5%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+article>h2{
+ color: #14213D;
+ text-align: center;
+}
+article>p{
+    text-align: justify;
+}
+h2{
+    color: #14213D;
+    text-align: center;
+    font-weight: 600;
+}
+#contenido{
+    margin:5%;
+    width: 90%;
+}
+main{
+    padding-bottom: 5%;
+}
+footer{
+    background-color: #14213D;
+    color: #FCA311;
+    padding: 3%;
+    width: 100%;
+    text-align: center;
+}
+#map {
+    height: 400px;
+    z-index: 0; /* Ajusta el z-index según tus necesidades */
+}
+#imagen{
+    width: 100px;
+}
+.seccion{
+    background-color: #14213D;
+    color: #FCA311;
+    padding: 1%;
+    text-align: center;
+}

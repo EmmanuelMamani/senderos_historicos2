@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+
+</head>
+<body>
+    <header>
+        <div class="grid grid-cols-2 items-center">
+            <div id="titulo">
+                <div>Senceros</div>
+                <div>Historicos</div>
+            </div>
+            <div id="opciones">
+                <a href="index.html"><img class="icono" src="img/home.svg"></a>
+                <a href="galeria.html"><img class="icono" src="img/galeria.svg"></a>
+                <a href="ubicacion.html"><img class="icono" src="img/ubicacion.svg"></a>
+                <a href="informacion.html"><img class="icono" src="img/info.svg"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="seccion"><h4 class="text-2xl mt-5 mb-5">Galería de imágenes 360°</h4></div>
+        <div class="carousel">
+            <a href="views/inicio.html"><img src="img/1.inicio.jpg"></a>
+            <a href="views/3.1.html"><img src="img\3.1.jpg"></a>
+            <a href="views/3.2.html"><img src="img/3.2.jpg"></a>
+            <a href="views/4,2.html"><img src="img/4,2.jpg"></a>
+            <a href="views/5c.html"><img src="img/5 c.jpg"></a>
+            <a href="views/5c1.html"><img src="img/5,1c.jpg"></a>
+            <a href="views/5c2.html"><img src="img/5.2c.jpg"></a>
+        </div>
+        <div class="seccion"><h4 class="text-2xl mt-5 mb-5">Galería de imágenes</h4></div>
+        <div class="carousel">
+            <!-- Aquí agregarás tus imágenes -->
+            <div><img src="https://www.opinion.com.bo/media/opinion/images/2021/05/20/2021052015411539160.jpg" alt="Imagen 1"></div>
+            <div><img src="img/cementerio.jpg" alt="Imagen 2"></div>
+            <div><img src="https://www.opinion.com.bo/asset/zoomcrop,768,432,center,center/media/opinion/images/2011/02/06/2011S83.jpg" alt="Imagen 3"></div>
+        </div>
+    </main>
+    <footer>
+        <h3>Proyecto universitario</h3>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            autoplay: true, // Reproducción automática
+            autoplaySpeed: 5000, // Velocidad de reproducción automática en milisegundos (2 segundos en este caso)
+            dots: true, // Mostrar indicadores de puntos
+            arrows: true, // Mostrar flechas de navegación
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+</head>
+<body>
+    <header>
+        <div class="grid grid-cols-2 items-center">
+            <div id="titulo">
+                <div>Senceros</div>
+                <div>Historicos</div>
+            </div>
+            <div id="opciones">
+                <a href="index.html"><img class="icono" src="img/home.svg"></a>
+                <a href="galeria.html"><img class="icono" src="img/galeria.svg"></a>
+                <a href="ubicacion.html"><img class="icono" src="img/ubicacion.svg"></a>
+                <a href="informacion.html"><img class="icono" src="img/info.svg"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="map" style="height: 400px;"></div>
+        <article>
+            <h2 class="text-2xl">Como llegar</h2>
+            <img src="img/run.svg" class="portada">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ex, velit ad consequuntur expedita voluptate ipsa voluptatibus temporibus eos nihil? Quia repellendus maiores vitae voluptates corporis ipsa reiciendis cupiditate! Amet.</p>
+            <img src="img/car.svg" class="portada">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi impedit fuga deleniti sed, corrupti sit nemo molestias molestiae eaque consequuntur quam nostrum magni possimus quos, minus delectus aperiam odio.</p>
+        </article>
+    </main>
+    <footer>
+        <h3>proyecto universitario</h3>
+    </footer>
+</body>
+<script>
+
+    var mymap = L.map('map').setView([51.5074, -0.1278], 15); // Cambia las coordenadas y el nivel de zoom
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+    L.marker([51.5074, -0.1278]).addTo(mymap).bindPopup('Mi Ubicación').openPopup(); // Cambia las coordenadas y el mensaje del marcador
+
+</script>
+</html>

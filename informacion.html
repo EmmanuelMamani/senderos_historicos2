@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+</head>
+<body>
+    <header>
+        <div class="grid grid-cols-2 items-center">
+            <div id="titulo">
+                <div>Senceros</div>
+                <div>Historicos</div>
+            </div>
+            <div id="opciones">
+                <a href="index.html"><img class="icono" src="img/home.svg"></a>
+                <a href="galeria.html"><img class="icono" src="img/galeria.svg"></a>
+                <a href="ubicacion.html"><img class="icono" src="img/ubicacion.svg"></a>
+                <a href="informacion.html"><img class="icono" src="img/info.svg"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+       <img src="img/cementerio.jpg" alt="">
+       <article>
+            <h2 class="text-2xl">Recorrido historico</h2>
+            <div class="carousel">
+                <div>
+                    <img src="img/run.svg" width="100" class="portada">
+                    <h2>Icono 1</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+                <div>
+                    <img src="img/run.svg" width="100" class="portada">
+                    <h2>Icono 2</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+                <div>
+                    <img src="img/run.svg" width="100" class="portada">
+                    <h2>Icono 3</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+                <div>
+                    <img src="img/run.svg" width="100" class="portada">
+                    <h2>Icono 4</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolor  </p>
+                </div>
+            </div>
+       </article>
+    </main>
+    <footer>
+        <h3>Proyecto universitario</h3>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            autoplay: true, // Reproducción automática
+            autoplaySpeed: 5000, // Velocidad de reproducción automática en milisegundos (2 segundos en este caso)
+            dots: true, // Mostrar indicadores de puntos
+            arrows: true, // Mostrar flechas de navegación
+        });
+    });
+</script>
+</html>
