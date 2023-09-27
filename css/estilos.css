@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #14213D;
     color: #FCA311;
     padding: 5%;
     width: 100%;
@@ -74,7 +74,7 @@ h2{
 }
 main{
     padding-bottom: 5%;
-    background-color: #E5E5E5;
+    background-color: #ffffff;
 }
 footer{
     background-color: #14213D;

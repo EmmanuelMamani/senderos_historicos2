@@ -25,30 +25,22 @@
         <a href="informacion.html">Blog</a>
     </div>
     <main>
-       <article>
-            <h2 class="text-2xl">Noticias</h2>
-            <div class="carousel">
-                <img src="img/noticia1.JPG" alt="">
-                <img src="img/noticia2.JPG" alt="">
-            </div>
-       </article>
+        <div class="seccion"><h4 class="text-2xl mt-5 mb-5">Recorrido Historico</h4></div>
+        <div class="grid grid-cols-2 gap-2 items-center">
+            <img src="img/PRESIDENTES.png" alt="">
+            <img src="img/qr1.jpeg" alt="">
+            <img src="img/BENEMERITOS.png" alt="">
+            <img src="img/qr2.jpeg" alt="">
+            <img src="img/MUJERES.png" alt="">
+            <img src="img/qr3.jpeg" alt="">
+            <img src="img/LISTAP.png" alt="">
+            <img src="img/qr4.jpeg" alt="">
+        </div>
     </main>
     <footer>
         <h3>Proyecto universitario</h3>
     </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.carousel').slick({
-            autoplay: true, // Reproducción automática
-            autoplaySpeed: 5000, // Velocidad de reproducción automática en milisegundos (2 segundos en este caso)
-            dots: true, // Mostrar indicadores de puntos
-            arrows: true, // Mostrar flechas de navegación
-        });
-    });
-</script>
 <script>
     var menu = document.getElementById('menu')
     var opciones = document.getElementById('opciones')
