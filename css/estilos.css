@@ -1,27 +1,41 @@
 body {
     width: 100%;
-    background-color: #E5E5E5;
-    font-family: 'Bitter', serif;
-    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background-color: #14213D;
+    background-color: #ffffff;
     color: #FCA311;
     padding: 5%;
     width: 100%;
     position: relative; /* Agregamos posición relativa al encabezado */
     z-index: 1; /* Ajusta el z-index según tus necesidades */
+    display: flex;
+    align-items: center;
 }
 
 #titulo {
     padding-left: 5%;
     width: 60%;
     font-size: 25px;
+    margin-right: 25%;
 }
-#opciones{
-    display: flex;
-    justify-items: center;
+#opciones {
+    background-color: #14213D;
+    color: #ffffff;
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    display: none;
+    padding-bottom: 2%;
+    z-index: 2; /* Ajusta el z-index para que esté por encima del video */
+}
+#opciones>a{
+    padding: 1%;
+    display: block;
+    width: 100%;
 }
 .icono{
     width: 40px;
@@ -60,6 +74,7 @@ h2{
 }
 main{
     padding-bottom: 5%;
+    background-color: #E5E5E5;
 }
 footer{
     background-color: #14213D;
@@ -80,4 +95,51 @@ footer{
     color: #FCA311;
     padding: 1%;
     text-align: center;
+}
+#galeria{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 90%;
+}
+@media (min-width: 600px) {
+    header {
+        background-color: #ffffff;
+        padding: 1%;
+        width: 100%;
+        position: relative; /* Agregamos posición relativa al encabezado */
+        z-index: 1; /* Ajusta el z-index según tus necesidades */
+        display: flex;
+        align-items: center;
+    }
+    
+    #titulo {
+        padding-left: 5%;
+        width: 20%;
+        font-size: 25px;
+        margin-right: 70%;
+    }
+    #opciones>a{
+        padding: 5px;
+        display: block;
+        width: 100%;
+    }
+    #opciones {
+        padding: 1%;
+    }
+    .seccion{
+        background-color: #14213D;
+        color: #FCA311;
+        padding: 5px;
+        text-align: center;
+    }
+    main{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .portada{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        margin-left: 20vw;
+    }
 }

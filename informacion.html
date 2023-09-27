@@ -6,26 +6,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Senderos Historicos</title>
 </head>
 <body>
     <header>
-        <div class="grid grid-cols-2 items-center">
-            <div id="titulo">
-                <div>Senceros</div>
-                <div>Historicos</div>
-            </div>
-            <div id="opciones">
-                <a href="index.html"><img class="icono" src="img/home.svg"></a>
-                <a href="galeria.html"><img class="icono" src="img/galeria.svg"></a>
-                <a href="ubicacion.html"><img class="icono" src="img/ubicacion.svg"></a>
-                <a href="informacion.html"><img class="icono" src="img/info.svg"></a>
-            </div>
-        </div>
+        <img src="img/logo.jpeg" id="titulo">
+        <div id="menu"><img src="img/menu.svg"></div>
     </header>
+    <div id="opciones">
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Recorrido</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="ubicacion.html">Ubicacion</a>
+        <a href="informacion.html">Blog</a>
+    </div>
     <main>
-       <img src="img/cementerio.jpg" alt="">
        <article>
             <h2 class="text-2xl">Recorrido historico</h2>
             <div class="carousel">
@@ -67,5 +66,16 @@
             arrows: true, // Mostrar flechas de navegación
         });
     });
+</script>
+<script>
+    var menu = document.getElementById('menu')
+    var opciones = document.getElementById('opciones')
+    menu.onclick = function() {
+        if (opciones.style.display == 'block') {
+            opciones.style.display = 'none'
+        } else {
+            opciones.style.display = 'block'
+        }
+    }
 </script>
 </html>
