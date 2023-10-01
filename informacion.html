@@ -19,17 +19,24 @@
     </header>
     <div id="opciones">
         <a href="index.html">Inicio</a>
-        <a href="recorrido.html">Recorrido</a>
+        <div class="flex" id="recorrido">
+            <a href="#">Recorrido</a><img src="/img/row.svg" alt="">
+        </div>
+        <div id="opt_recorrido">
+            <a href="#">Benemeritos</a>
+            <a href="#">Mujeres Notables</a>
+            <a href="#">Presidentes</a>
+        </div>
         <a href="galeria.html">Galeria</a>
         <a href="ubicacion.html">Ubicacion</a>
         <a href="informacion.html">Blog</a>
     </div>
     <main>
-       <article>
-            <h2 class="text-2xl">Noticias</h2>
-            <div class="carousel">
-                <img src="img/noticia1.JPG" alt="">
-                <img src="img/noticia2.JPG" alt="">
+       <article class="noticia"> 
+            <img src="/img/cementerio.jpg" alt="">
+            <div>
+                <h4 class="text-center"><strong>Titulo noticia</strong></h4>
+                <p>Cuerpo noticia</p>
             </div>
        </article>
     </main>
@@ -37,18 +44,6 @@
         <h3>Proyecto universitario</h3>
     </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.carousel').slick({
-            autoplay: true, // Reproducción automática
-            autoplaySpeed: 5000, // Velocidad de reproducción automática en milisegundos (2 segundos en este caso)
-            dots: true, // Mostrar indicadores de puntos
-            arrows: true, // Mostrar flechas de navegación
-        });
-    });
-</script>
 <script>
     var menu = document.getElementById('menu')
     var opciones = document.getElementById('opciones')
@@ -57,6 +52,15 @@
             opciones.style.display = 'none'
         } else {
             opciones.style.display = 'block'
+        }
+    }
+    var recorrido = document.getElementById('recorrido')
+    var opt_recorriodo = document.getElementById('opt_recorrido')
+    recorrido.onclick = function(){
+        if (opt_recorriodo.style.display == 'block') {
+            opt_recorriodo.style.display = 'none'
+        } else {
+            opt_recorriodo.style.display = 'block'
         }
     }
 </script>

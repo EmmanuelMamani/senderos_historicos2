@@ -20,7 +20,14 @@
     </header>
     <div id="opciones">
         <a href="index.html">Inicio</a>
-        <a href="recorrido.html">Recorrido</a>
+        <div class="flex" id="recorrido">
+            <a href="#">Recorrido</a><img src="/img/row.svg" alt="">
+        </div>
+        <div id="opt_recorrido">
+            <a href="#">Benemeritos</a>
+            <a href="#">Mujeres Notables</a>
+            <a href="#">Presidentes</a>
+        </div>
         <a href="galeria.html">Galeria</a>
         <a href="ubicacion.html">Ubicacion</a>
         <a href="informacion.html">Blog</a>
@@ -48,6 +55,15 @@
             opciones.style.display = 'none'
         } else {
             opciones.style.display = 'block'
+        }
+    }
+    var recorrido = document.getElementById('recorrido')
+    var opt_recorriodo = document.getElementById('opt_recorrido')
+    recorrido.onclick = function(){
+        if (opt_recorriodo.style.display == 'block') {
+            opt_recorriodo.style.display = 'none'
+        } else {
+            opt_recorriodo.style.display = 'block'
         }
     }
 </script>

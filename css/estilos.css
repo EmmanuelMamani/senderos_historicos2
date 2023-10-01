@@ -2,6 +2,7 @@ body {
     width: 100%;
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/fondo.jpg');
 }
 
 header {
@@ -36,6 +37,18 @@ header {
     padding: 1%;
     display: block;
     width: 100%;
+}
+#opciones>div>a{
+    padding: 1%;
+    padding-left: 7%;
+    display: block;
+    width: 100%;
+}
+#opt_recorrido{
+    display: none;
+}
+#recorrido{
+    width: 30%;
 }
 .icono{
     width: 40px;
@@ -74,7 +87,7 @@ h2{
 }
 main{
     padding-bottom: 5%;
-    background-color: #ffffff;
+    
 }
 footer{
     background-color: #14213D;
@@ -101,9 +114,14 @@ footer{
     margin-left: 5%;
     width: 90%;
 }
+.noticia{
+    background-color: #E5E5E5;
+    width: 80%;
+    margin-left: 10%;
+}
 @media (min-width: 600px) {
     header {
-        background-color: #ffffff;
+        background-color: #14213D;
         padding: 1%;
         width: 100%;
         position: relative; /* Agregamos posición relativa al encabezado */
